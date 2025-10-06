@@ -12,6 +12,5 @@ def ask_question(req: QueryRequest):
     try:
         answer = run_query(req.query)
     except Exception as e:
-        print("Error in run_query:", e)
         answer = "Sorry, could not generate an answer."
     return {"query": req.query, "answer": answer}
