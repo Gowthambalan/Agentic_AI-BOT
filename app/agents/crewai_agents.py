@@ -55,7 +55,7 @@ class WebAgent(Agent):
                 Web Search Results: {results}
                 
                 Answer directly based on the web information:"""
-                
+                print("wdghvhsdvhs")
                 answer = generate_text(prompt)
                 return f"🌐 FROM WEB SEARCH:\n{answer}"
             else:
