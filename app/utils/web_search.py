@@ -27,7 +27,7 @@ def search_web(query):
         )
         
         logger.info(f"📊 HTTP Status: {response.status_code}")
-        
+        print('hi')
         if response.status_code != 200:
             logger.error(f"❌ API Error {response.status_code}: {response.text}")
             return None
