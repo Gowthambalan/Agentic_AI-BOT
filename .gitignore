@@ -1,0 +1,23 @@
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+
+# Data and temporary storage
+data/vector_db/
+
+# Logs (optional)
+*.log

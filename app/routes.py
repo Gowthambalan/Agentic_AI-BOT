@@ -9,5 +9,9 @@ class QueryRequest(BaseModel):
 
 @router.post("/ask")
 def ask_question(req: QueryRequest):
-    answer = run_query(req.query)
+    try:
+        answer = run_query(req.query)
+    except Exception as e:
+        print("Error in run_query:", e)
+        answer = "Sorry, could not generate an answer."
     return {"query": req.query, "answer": answer}
