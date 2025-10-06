@@ -74,6 +74,7 @@
 #         except Exception as e:
 #             logger.error(f"WriterAgent error: {e}")
 #             return f"Error in WriterAgent: {str(e)}"
+
 from crewai import Agent
 from app.utils.rag import search_vector_db
 from app.utils.web_search import search_web
