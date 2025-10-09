@@ -32,3 +32,5 @@ data/vector_db/
 
 # Ignore sensitive information files
 config.yaml".yaml" 
+
+
