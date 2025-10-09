@@ -25,3 +25,10 @@ data/vector_db/
 # files
  .pdf/".env" 
 ".pdf" 
+
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore sensitive information files
+config.yaml".yaml" 
