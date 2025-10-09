@@ -1,0 +1,25 @@
+web_task:
+  description: >
+    Search the web using the Serper tool to find accurate and relevant information about the user's query.
+    Summarize the findings concisely and provide a clear final answer.
+    If multiple sources provide conflicting information, resolve conflicts using reasoning and provide the most probable answer.
+  expected_output: >
+    A clear, concise, and factual answer based on web search results.
+    Include key points, relevant details, and optionally source references.
+
+Decision_task:
+  description: >
+    Evaluate the user's query and determine which agent (WebAgent or DataAgent) is best suited to handle the request.
+    Consider the nature of the query, required expertise, and available tools.
+    Provide a rationale for the chosen agent.
+  expected_output: >
+    The name of the selected agent (WebAgent or DataAgent) along with a brief explanation of why this agent is best suited for the task.
+  
+  Data_task:
+  description: >
+    Analyze and interpret data from vector databases to provide insights and recommendations relevant to the user's query.
+    Use appropriate data analysis techniques to extract meaningful information.
+    Present findings in a clear and actionable manner.  
+  expected_output: >
+    A detailed analysis report including key insights, trends, and recommendations based on the data.
+
