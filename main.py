@@ -12,4 +12,4 @@ app.include_router(router)
 
 @app.get("/")
 def root():
-    return {"message": "CrewAI + RAG API is running 🚀"}
+    return {"message": "CrewAI + RAG API is running "}
